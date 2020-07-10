@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Krishna Ltd.</title>
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="Home.css" /> 
+        <script>
+            function a ()
+            {
+                var i1 = parseInt(document.getElementById('V1').value);
+                var i2 = parseInt(document.getElementById('V2').value);
+                var gast = document.getElementById('GST').value = (i1 + i2) * 5/100 ;
+                var profitasd = parseInt(document.getElementById('profitas').value);
+                var profit = document.getElementById('profit').value = Math.round((i1 + i2+ gast)* profitasd/100);
+                var delayInMilliseconds = 100;
+                setTimeout(function() {
+                var last = document.getElementById('mmsd').value = Math.round((gast + i1 +i2)*profitasd/100+(gast + i1 +i2));
+                }, delayInMilliseconds)
+            }
+            function b() {
+            var z1 = parseInt(document.getElementById('Box').value);
+            var z2 = parseInt(document.getElementById('Box2').value);
+            var z3 = parseInt(document.getElementById('Box3').value);
+             {  if(z1 == 0)
+                {
+                var D = document.getElementById('Az1').value = "D";
+                }
+                else if (z1 == 1)
+                {
+                    var K = document.getElementById('Az1').value = "K";
+                }
+                else if (z1 == 2) 
+                {
+                    var R = document.getElementById('Az1').value = "R";
+                }
+                else if (z1 == 3) 
+                {
+                    var I = document.getElementById('Az1').value = "I";
+                }
+                else if (z1 == 4) 
+                {
+                    var S = document.getElementById('Az1').value = "S";
+                }
+                else if (z1 == 5) 
+                {
+                    var H = document.getElementById('Az1').value = "H";
+                }
+                else if (z1 == 6) 
+                {
+                    var N = document.getElementById('Az1').value = "N";
+                }
+                else if (z1 == 7) 
+                {
+                    var A = document.getElementById('Az1').value = "A";
+                }
+                else if (z1 == 8) 
+                {
+                    var L = document.getElementById('Az1').value = "L";
+                }
+                else if (z1 == 9) 
+                {
+                    var T = document.getElementById('Az1').value = "T";
+                }
+             }
+             {
+                if(z2 == 0)
+                {
+                var D = document.getElementById('Az2').value = "D";
+                }
+                else if (z2 == 1)
+                {
+                    var K = document.getElementById('Az2').value = "K";
+                }
+                else if (z2 == 2) 
+                {
+                    var R = document.getElementById('Az2').value = "R";
+                }
+                else if (z2 == 3) 
+                {
+                    var I = document.getElementById('Az2').value = "I";
+                }
+                else if (z2 == 4) 
+                {
+                    var S = document.getElementById('Az2').value = "S";
+                }
+                else if (z2 == 5) 
+                {
+                    var H = document.getElementById('Az2').value = "H";
+                }
+                else if (z2 == 6) 
+                {
+                    var N = document.getElementById('Az2').value = "N";
+                }
+                else if (z2 == 7) 
+                {
+                    var A = document.getElementById('Az2').value = "A";
+                }
+                else if (z2 == 8) 
+                {
+                    var L = document.getElementById('Az2').value = "L";
+                }
+                else if (z2 == 9) 
+                {
+                    var T = document.getElementById('Az2').value = "T";
+                }
+             }
+             {
+                if(z3 == 0)
+                {
+                var D = document.getElementById('Az3').value = "D";
+                }
+                else if (z3 == 1)
+                {
+                    var K = document.getElementById('Az3').value = "K";
+                }
+                else if (z3 == 2) 
+                {
+                    var R = document.getElementById('Az3').value = "R";
+                }
+                else if (z3 == 3) 
+                {
+                    var I = document.getElementById('Az3').value = "I";
+                }
+                else if (z3 == 4) 
+                {
+                    var S = document.getElementById('Az3').value = "S";
+                }
+                else if (z3 == 5) 
+                {
+                    var H = document.getElementById('Az3').value = "H";
+                }
+                else if (z3 == 6) 
+                {
+                    var N = document.getElementById('Az3').value = "N";
+                }
+                else if (z3 == 7) 
+                {
+                    var A = document.getElementById('Az3').value = "A";
+                }
+                else if (z3 == 8) 
+                {
+                    var L = document.getElementById('Az3').value = "L";
+                }
+                else if (z3 == 9) 
+                {
+                    var T = document.getElementById('Az3').value = "T";
+                }
+             }  
+
+
+            }
+            
+        </script>
+    </head>
+    <body>
+        Hi Representative!!
+        <form class="GGB">
+           <b>Enter the Value of Product</b> <input type="text" class="ASD" id="V1" style ="height : 30px; width : 50px; font-size: 25px;">  <br>
+           <b>Enter the Value of Transport:</b> <input type="number" class="ASD" value="8" id="V2"> <br>
+           <b>GST for your product is:</b> <input type="text" class="ASD" id="GST"> <br>
+           <b>Profit Percentage Used in the value: </b> <input type="text" id="profitas" value="20"> <br>
+           <b>Profit Earned:</b> <input type="text" class="ASD" id="profit"> <br>
+           <b>Total Value after including GST and Transport</b> <input type="number" class="ASD" id="mmsd"> <br>
+           <button type="button" onclick="a();">Click to know GST</button>       
+           <HR></HR>
+           <input type="number" id="Box" value="0"> <input type="number" id="Box2" value="0"> <input type="number" id="Box3" value="0"> <br> 
+        <input type="text" id="Az1">  <input type="text" id="Az2"> <input type="text" id="Az3"> <br>
+        <button type="button" onClick="b()">Clcik Me!!</button>
+        </form>
+    </body>
+</html>
